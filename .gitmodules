@@ -1,0 +1,3 @@
+[submodule "librarySystemDB"]
+	path = librarySystemDB
+	url = https://github.com/GWeronika/librarySystemDB.git

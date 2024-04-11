@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap');
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.banner {
+	width: 100%;
+	height: 12vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #1E1E1E;
+	color: white;
+}
+
+.logo{
+	cursor: pointer;
+	margin-left: 3%;
+	width: 50%;
+}
+.logo img{
+	margin-top: 3%;
+	width: 30%;
+	height: 70%;
+}
+
+/* Common styles for dropdown content */
+.banner-right {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 50%;
+	font-size: 20px;
+}
+
+.banner-right div{
+	margin-right: 8%;
+	cursor: pointer;
+}
+
+.banner-right div:hover{
+	color: #CE5A67;
+}
+
+/* Dodatkowy styl dla .additional-div1 */
+.additional-div1 {
+	width: 100%;
+	height: 88vh;
+	display: flex;
+	justify-content: center;
+	overflow-y: auto;
+}
+
+.additional-div1-scroll {
+	overflow-y: scroll;
+}
+
+.additional-div1 .slider-container {
+	width: 80%;
+	height: 75%;
+	max-width: 100%;
+	max-height: 75%;
+	display: flex;
+	align-items: center;
+	margin-top: 5%;
+
+}
+
+.additional-div1 .prev, .additional-div1 .next {
+	font-size: 24px;
+	color: white;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.additional-div1 .prev {
+	width: 10%;
+	color: grey;
+}
+
+.additional-div1 .prev:hover ,.additional-div1 .next:hover {
+	font-size: 28px;
+	transition: 0.3s;
+}
+
+.additional-div1 .slides {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Maintain aspect ratio while covering the container */
+
+}
+
+.additional-div1 .next {
+	width: 10%;
+	color: grey;
+}
+
+.additional-div1 .prev {
+	margin-right: auto; /* Push the previous arrow to the left */
+}
+
+.additional-div1 .next {
+	margin-left: auto; /* Push the next arrow to the right */
+}
+
+.slides {
+	max-width: 100%;
+	background-color: #CE5A67;
+	opacity: 0.8;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 3%;
+	margin-right: 3%;
+}
+
+.Rectangle4 {
+	width: 100%;
+	height: 100%;
+	margin-top: 3%;
+	margin-left: 3%;
+	opacity:1;
+
+}
+
+
+
+.Rectangle5 {
+	width: 400px;
+	height: 120px;
+	background: rgba(0, 0, 0, 0.95);
+	margin-left: 1%;
+	position: absolute;
+	top: 62%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	font-family: 'Signika Negative', sans-serif;
+	text-shadow: 1px 1px 2px #CE5A67;
+}
+
+
+.flex-container-row {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.acc-page {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.left-side{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10%;
+}
+
+.hello-tekst{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.dataDiv {
+	margin-top: 10%;
+	width: 600px;
+	height: 300px;
+	overflow: hidden;
+	box-shadow: 1px 1px 1px 1px #888888;
+	margin-bottom: 15%;
+	padding: 15px;
+}
+
+.login-form-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 60%;
+}
+
+.login-form-container h2{
+	text-align: center;
+	font-size: 32px;
+	font-color: #1E1E1E;
+	font-weight: bold;
+	margin-bottom: 11%;
+}
+
+.login-form-container input {
+	width: 55%;
+	border-radius: 5px;
+	padding: 12px;
+	margin-bottom: 3%;
+	border-color: #1E1E1E
+}
+
+.login-form-container button {
+	font-size: 18px;
+	background-color: #CE5A67;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	width: 20%;
+	padding: 10px;
+	height: 10%;
+	border-radius: 5px;
+}
+
+.link-container {
+	width: 35%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #CE5A67;
+	opacity: 0.9;
+}
+
+.link-container img {
+	width: 95%;
+	height: 80%;
+	margin-bottom: 5%;
+	cursor: none;
+}
+/* Add any additional styles for login-mode if needed */
+i{
+	margin-left: 7px;
+	margin-right: 10px;
+}
+
+.link-container div {
+	color: white; /* Default link color */
+	margin-bottom: 10px;
+	font-weight: bold;
+	text-align: left;
+	cursor: pointer;
+}
+
+.link-container div:hover {
+
+	text-decoration: underline;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5); /* Przyciemnienie tła */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000; /* Z-index, aby pojawił się nad resztą treści */
+}
+
+.overlay-content {
+	display: flex;
+	flex-direction: row; /* Zmiana na kierunek wiersza */
+	align-items: center;
+	justify-content: space-around;
+	width: 40%;
+	height: 10%;
+	background-color: white;
+	padding: 10px;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Cień dla efektu warstwy */
+}
+
+.overlay-content-column{
+	display: flex;
+	flex-direction: column; /* Zmiana na kierunek wiersza */
+	align-items: center;
+	justify-content: space-around;
+	width: 40%;
+	min-height: 10%;
+	padding: 15px;
+	padding-bottom: 30px;
+	background-color: white;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.overlay-content button{
+	background-color: #1E1E1E;
+	border-radius: 2px;
+	color: white;
+	padding: 5px;
+}
+
+.all-locations {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	text-align: left;
+	background-color: white;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	width: 12%;
+	font-size: 18px;
+	padding: 8px;
+}
+
+.selected-location {
+	cursor: pointer;
+	font-size: 18px;
+	padding: 8px;
+}
+
+.fa-caret-down {
+	margin-left: 5px;
+}
+
+/* Additional CSS styles for the registration form */
+.registration-form{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.section{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: left; /* Align labels to the left */
+}
+
+.section2{
+
+}
+
+.sections{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+
+.registration-form h2 {
+	margin-bottom: 15px;
+}
+
+.registration-form label {
+	text-align: left; /* Align labels to the left */
+	margin-bottom: 5px;
+}
+
+.registration-form input {
+	padding: 8px;
+	margin-bottom: 15px;
+}
+
+.registration-form button {
+	background-color: #000;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	width: 30%; /* Adjust the width as needed */
+	max-width: 200px;
+	padding: 8px;
+	height: 30px;
+}
+
+.registration-form select{
+	padding: 8px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+
+.book-container{
+	width: 55%;
+	max-width: 55%;
+}
+
+.book-container div{
+	cursor: pointer;
+}
+.target:hover{
+	text-decoration: underline;
+}
+
+.options-container {
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	width: 30%;
+	margin-top: 20px;
+	height: 60%;
+	margin-right: 10%;
+}
+
+.option {
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	background-color: #CE5A67;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.option:hover {
+	opacity: 0.9;
+}
+
+.additional-scroll {
+	padding-top: 30px;
+	height: 100%;
+	align-items: flex-start;
+	justify-content: center;
+	overflow-y: auto; /* Enable vertical scrolling if the content exceeds the max height */
+	border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+	/* Optional: Add padding for better spacing */
+
+	/* Style the scrollbar */
+	scrollbar-width: thin; /* Firefox */
+	scrollbar-color: #888 #f4f4f4; /* Firefox */
+
+	/* WebKit (Chrome, Safari) */
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #888;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: #f4f4f4;
+	}
+}
+
+.scroll{
+	overflow-y: auto; /* Enable vertical scrolling if the content exceeds the max height */
+	border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+	/* Optional: Add padding for better spacing */
+
+	/* Style the scrollbar */
+	scrollbar-width: thin; /* Firefox */
+	scrollbar-color: #888 #f4f4f4; /* Firefox */
+
+	/* WebKit (Chrome, Safari) */
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #888;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: #f4f4f4;
+	}
+}
+
+.book-container > div {
+	margin-bottom: 10px; /* Adjust the margin between book entries as needed */
+}
+
+.overlay-content-2 {
+	width: 30%;
+	height: 15%;
+	background-color: white;
+	padding: 10px;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Cień dla efektu warstwy */
+}
+/* Text Container Styles */
+.text-container {
+	background: #fff; /* White background */
+	padding: 10px;
+	border-radius: 5px; /* Optional: Add border radius for rounded corners */
+	margin-bottom: 10px;
+}
+
+.order-confirmation p {
+	margin-bottom: 10px;
+}
+
+/* Confirm Button Styles */
+#confirmOrder {
+	background: #000; /* Black background */
+	color: #fff; /* White text */
+	border: none;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+/* Cancel Button Styles */
+#cancelOrder {
+	background: none;
+	border: 2px solid red; /* Red border */
+	color: red; /* Red text */
+	padding: 10px 15px;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.reader-container p{
+	margin-left: 15px;
+}
+
+.copy-container div:not(:first-child) {
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+
+.copy-container div:not(:first-child):hover {
+	text-decoration: underline;
+}
+
+/* Modal Overlay */
+.copy-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 5; /* Adjust the z-index as needed */
+}
+
+/* Copy Container */
+.copy-container {
+	display: flex;
+	flex-direction: column;
+	background: #fff; /* White background */
+	padding: 20px;
+	max-width: 80%; /* Adjust the maximum width as needed */
+	overflow-y: auto; /* Enable vertical scrolling if needed */
+	border-radius: 2px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for a subtle border */
+}
+
+/* Close Button */
+.close-button-copy {
+	background: #CE5A67; /* Button background color */
+	color: #fff; /* Button text color */
+	font-weight: bold;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-top: 10px;
+	width: 18%;
+	margin-left: 82%;
+}
+
+button:hover {
+	opacity: 0.95;
+}
+
+.tytul-div-copy{
+	background-color: #1E1E1E;
+	padding: 8px;
+	margin-bottom: 15px;
+	color: white;
+	font-size: 18px;
+	cursor: default;
+}
+
+#Search{
+	width: 100%;
+	margin-bottom: 5%;
+	border-radius: 2px;
+	padding: 10px;
+	border-color: #CE5A67;
+}
+
+#Search:hover{
+	text-decoration:none;
+}
+
+.dataDiv p{
+	margin-left:15px;
+}
+
+.wyloguj{
+	background-color: #1E1E1E;
+	padding: 8px;
+	position: absolute;
+	right: 2%;
+	bottom: 2%;
+	color: white;
+	width: 15%;
+}
+
+.inputyDiv{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.inputyDiv input{
+	padding: 10px;
+	margin: 10px;
+	min-width: 100px;
+}
+
+.inputyDiv select{
+	padding: 10px;
+	margin: 10px;
+	min-width: 100px;
+}
+
+.inputyDiv button{
+	background-color: #1E1E1E;
+	border-radius: 2px;
+	color: white;
+	padding: 10px;
+	margin: 5px;
+}
+
+.dataDiv p{
+	cursor: pointer;
+}
+
+.dataDiv p:hover{
+	text-decoration: underline;
+}
+
+
+.dataDiv li{
+	cursor: pointer;
+}
+
+.dataDiv li:hover{
+	text-decoration: underline;
+}
+
+.pagination{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+	gap: 20px;
+	font-size: 40px;
+}
+
+#prevPage:hover{
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+}
+
+#nextPage:hover{
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+}
+
+.pagination div {
+	text-decoration: none; /* Remove underlining */
+	cursor: pointer; /* Show cursor as pointer on hover */
+	color: #CE5A67;
+}
